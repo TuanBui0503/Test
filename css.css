@@ -1,0 +1,31 @@
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    background-color: black;
+}
+.nav-item {
+    color: rgb(223, 0, 0);
+    padding: 8px;
+    margin: 10px;
+    text-decoration: none;
+}
+.relative{
+    position: relative;
+    /* k biết giải thích như nào */
+}
+.absolute{
+    position: absolute;
+    /* di chuyển đến các vị trí trong thẻ cha */
+    /* position fixed để lúc lăn chuột nó sẽ đi theo  */
+    top: 100px;
+    left: 100px;
+}
+
+/* flex dùng để chỉnh kích thước, không gian các phần tử trong 1 thẻ cha
+ mặc định là flex row xếp hàng ngang
+collum là xếp dọc thêm -reverse để đảo ngược thứ tự xuống dòng
+justifycontent space between dùng để chia các phần tử cách đều nhau
+flex warp là xuống dòng no warp là k xuống dòng
+texdecoration=none là để loại dấu gạch chân dưới dòng chữ
+padding để tạo khoảng các giữa phần tử với boder
+margin để tạo khoảng cách ngoài boder */
