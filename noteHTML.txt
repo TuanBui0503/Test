@@ -1,0 +1,30 @@
+1,thẻ a để định nghĩa 1 siêu liên kết
+- các thuộc tính target trong thẻ a:
++ mặc định là _self, mở cửa sổ trong cùng 1 tab
++ _blank: mở cửa sổ ở tab khác
++ _parent: mở tài liệu trong thẻ cha
++ _top: mở toàn bộ nội dung của tài liệu
+2,thẻ img để thêm ảnh
+- src: để xác định nguồn của ảnh
+- alt: văn bản thay thế hình ảnh khi ảnh bị mất
+3,thẻ h1 là tiêu đề chính, h2 là tiêu đề phụ, h3456 là các tiêu đề ít quan trọng hơn
+4, thẻ button để thêm 1 nút 
+5,thẻ input để tạo trường nhập dữ liệu, có thuộc tính type để nhập kiểu dữ liệu
+- các loại dữ liệu:
++ text
++ password
++ email
++ number
++ ratio (lựa chọn giá trị)
++ checkbox
++ file (chọn tệp)
++ date (nhập ngày)
++ value (nút gửi dữ liệu)
++ button 
+thẻ i để in nghiêng
+thẻ strong để in đậm
+thẻ p để viết chữ
+thẻ ul li để tạo menu
+thẻ br để xuống dòng
+thẻ span 
+thẻ video để thêm video 
