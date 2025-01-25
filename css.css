@@ -1,48 +1,34 @@
-.navbar {
-    display: flex; 
-    justify-content: space-between;
-    background-color: black;
+.flex {
+    display: flex;
 }
-.nav-item {
-    color: rgb(223, 0, 0);
-    padding: 8px;
-    margin: 10px;
+.text-decoration{
     text-decoration: none;
-    letter-spacing: 4px;
 }
-.nav-item:hover{
+.top {
+    justify-content: space-between;
+    background-color: rgb(0, 0, 154);
     color: aliceblue;
 }
-.relative{
-    position: relative;
-    /* k biết giải thích như nào */
-}
-.absolute{
-    position: absolute;
-    /* di chuyển đến các vị trí trong thẻ cha */
-    /* position fixed để lúc lăn chuột nó sẽ đi theo  */
-    top: 100px;
-    left: 100px;
-}
-.nut:active{
-    color: yellow;
-}
 
-/* flex dùng để chỉnh kích thước, không gian các phần tử trong 1 thẻ cha
- mặc định là flex row xếp hàng ngang
-collum là xếp dọc thêm -reverse để đảo ngược thứ tự xuống dòng
-justifycontent space between dùng để chia các phần tử cách đều nhau
-flex warp là xuống dòng no warp là k xuống dòng
-texdecoration=none là để loại dấu gạch chân dưới dòng chữ
-letter spacing để tăng khoảng cách giữa các chữ cái
-padding để tạo khoảng các giữa phần tử với boder
-margin để tạo khoảng cách ngoài boder
-overflow:hiden : những phần lòi ra khỏi thẻ cha sẽ bị ẩn đi
-font-size: là kích cỡ chữ
-fontweight: là độ đậm nét
-text align: căn giữa,trái,phải cho chữ
-align item: căn giữa trái, phải cho phần tử
-hover: khi di chuột vào nó sẽ biến đổi
-active: khi click chuột vào nó sẽ thay đổi
-list style type: none để loại bỏ dấu chấm phía trước 1 list
-fontfamily: phông chữ */
+.left {
+    padding: 5px;
+    margin: 5px;
+}
+.right{
+    padding: 5px;
+    margin: 5px;
+}
+.header-item{
+    
+    padding: 20px;
+}
+.col-12{
+    width: 100%;
+}
+.setTimeout{
+    background-color: #ccc;
+    color: blue;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 80px;
+}
