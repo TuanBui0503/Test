@@ -1,0 +1,39 @@
+.span{
+    display: block;
+    font-size: 45px;
+    font-weight: 600;
+}
+.summary{
+    font-weight: 600;
+    padding: 10px 0;
+}
+li{
+    padding: 10px 0;
+}
+.button {
+    padding: 20px 20px 20px 0;
+    color: #0213B0;
+    text-align: start;
+    background-color: rgb(255, 255, 241);
+    border: 0;
+    border-bottom: 1px solid #0213B0;
+    width: 100%;
+}
+
+.button-mobile{
+    margin-top: 20px;
+    color: #0213B0;
+    text-align: start;
+    background-color: rgb(255, 255, 241);
+    border: 0;
+    border-bottom: 1px solid #0213B0;
+    width: 100%;
+}
+.padding-topbot {
+    padding: 80px 0;
+}
+
+.margin{
+    margin: 10px 0;
+}
+
