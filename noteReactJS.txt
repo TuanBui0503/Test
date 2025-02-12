@@ -1,0 +1,121 @@
+1,Arrow function (hàm mũi tên)
+- là cách viết gọn gàng hơn của 1 function 
+cách viết:
+const tenHam = (thamSo) => {
+  return giaTri;
+};
+
+ ví dụ:
+const logger(log) = (log) => {
+     console.log(log);
+
+ logger('Hello World');}
+
+
+2, module 
+- là các file JS có thể chứa component(functional hoặc class component), Hàm tiện ích
+dữ liệu, css hoặc module css
+- có 2 loại export trong reactJS
+a, export default
+
+
+3,Enhanced object literals
+- để tối ưu hóa cách viết ofject 
+ví dụ:
+const name = 'Tuan'
+const age = '24'
+const HoTen = {name, age}
+console.log(HoTen)
+
+- để định nghĩa phương thức (method) rút gọn
+cách cũ:
+const object = {
+  Chao: function () {
+    console.log("Chào bà con");
+  },
+};
+
+cách mới: 
+const object = {
+  Chao() {
+    console.log("chào bà con");
+  },
+};
+
+4, Spread (toán tử giải)
+-dùng để sao chép hoặc hợp nhất các mảng, object với nhau thể hiện bằng dấu ...
+khi dùng dấu ... coi như nó bỏ 2 dấu ngoặc bên ngoài chỉ còn lại
++nối mảng:
+ví dụ:
+const array1 = ['a', 'b', 'c']
+const array2 = ['d', 'e', 'f']
+const array3 = [...array1, ...array2]
+console.log(array3)
++ nối object 
+const object1 = {
+  name = 'tuan'
+};
+console ofject2 = {
+  age = '24'
+};
+
+object3 = {
+  ...object1
+  ...object2
+};
+
++ sao chép mảng
+const array1 = ['a', 'b']
+const array2 = [...array1]
+console.log(array2)
+
+5, Phương thức React.createElement
+- dùng để tạo ra các phần tử react
+cách viết:
+React.createElement(type, props, ...children)
+- type: Loại phần tử (chuỗi cho thẻ HTML, hoặc một component React).
+- props: Thuộc tính của phần tử (có thể là null nếu không có thuộc tính nào).
+-  ...children: Nội dung con của phần tử. tính từ sau props đều là children hết và có thể chứa nhiều children
+
+ví dụ: tạo 1 thẻ div với id "root" trước 
+const element = React.createElement(
+    'h1', 
+    { 
+    className: 'title' 
+    },  
+    'Hú lee',
+    React.createElement('p', {}, 'Tôi ở đây để test'),
+);
+*đối với react 17
+const root = document.getElementById('root')
+  ReactDOM.render(element, root)
+
+* đối với react 18
+const container = document.getElementById('root')
+root.render(element)
+
+6, JSX (javascript xml)
+- là cú pháp mở rộng của js cho phép viết code giống html trong js, giúp tạo giao diện react và dễ đọc dễ viết hơn
+gắn thêm thư viện bable và gắn thêm type = "text/bable" để thư viện hoạt động
+
+ví dụ:
+ const courses = [
+    {
+        name: 'HTML, CSS'
+    },
+
+    {
+        name: 'JavaScript'
+    },
+
+    {  
+        name: 'ReactJS'
+    },
+ ]
+ const jsx = (
+  <ul>
+      {courses.map(course =>
+        <li>{course.name}</li>
+    )}
+  </ul>
+)
